@@ -20,3 +20,5 @@ def setup_logger(name: str = "app", level=logging.INFO) -> logging.Logger:
         logger.addHandler(file_handler)
 
     return logger
+
+logger = setup_logger()

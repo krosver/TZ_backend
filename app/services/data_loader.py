@@ -1,10 +1,8 @@
 import requests
-import logging
+from app.utils.logger import logger
 from app.models import Category, Mark, Product, Color, Parameter, Image, Review, ReviewVideo, Extra, Excluded
 from datetime import datetime
 from app.database import SessionLocal
-
-logger = logging.getLogger(__name__)
 
 API_URLS = [
     "https://bot-igor.ru/api/products?on_main=true",
